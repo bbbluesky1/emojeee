@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="./static/sp_style.css">
+    <link rel="stylesheet" media="screen and (min-width:769px)" href="./static/pc_style.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script type="text/javascript" src="./static/javascript.js"></script>
+    <title>emojeee：文に合う絵文字を自動生成</title>
+</head>
+<body>
+  <header>
+    <h1>em😆jeee</h1>
+  </header>
+  <div id="box_parent">
+    <div class="box_child"><div><p id="box_header1">Input:</p></div><textarea id="textarea" placeholder="テキストを入力してください"></textarea></div><div class="box_child"><div><p id="box_header2">Output:</p></div><p id="result"></p></div>
+    <button onclick="do_ajax()"><img src="./static/btn.png" alt="送信"/></button>
+  </div>
+  <div id="description">
+    <p id="top"><strong>emojeee</strong>なら,テキストに合う絵文字を自動で生成</p>
+    <div class="box_list">
+      <img src="./static/brain-2062057_1920.jpg"/>
+      <p>高い精度</p>
+    </div>
+    <div class="box_list">
+      <img src="./static/emoticons-5102705_1920.png">
+      <p>80種類の豊富な絵文字</p>
+    </div>
+    <div class="box_list">
+      <img src="./static/silhouette-3199472_1280.png"/>
+      <p>速い変換</p>
+    </div>
+    <div class="box_list">
+      <img src="./static/mobile-1087845_1920.jpg"/>
+      <p>様々な場面に</p>
+    </div>
+    </div>
+  <footer><p>©︎2021 emojeee</p></footer>
+</body>
+</html>
